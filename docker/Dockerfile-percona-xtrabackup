@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-COPY ./docker/cn.list /etc/apt/sources.list
+COPY cn.list /etc/apt/sources.list
 RUN apt-get update -q \
 	&& apt-get install -y wget \
 	&& wget https://repo.percona.com/apt/percona-release_0.1-4.jessie_all.deb -O /tmp/percona-release_0.1-4.jessie_all.deb \
