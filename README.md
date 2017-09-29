@@ -11,5 +11,10 @@ The second step requires percona-xtrabackup in command, which is not provided on
 # Idea
 The idea is to start a docker container with percona-xtrabackup inside and share disk volumn with host, apply binlog in container and tear down the container for the host.
 
-# How
+# Run
+
+Checkout the `apply_mysql_binlog.sh` as executable and run it.
+
+```
 Usage: apply_mysql_binlog.sh /ABSOLUTE/PATH/TO/MYSQL_SNAPSHOT/FOLDER
+```
